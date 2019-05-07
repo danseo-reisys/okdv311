@@ -20,4 +20,7 @@ env > $log
 # install OKD
 ./install-openshift.sh >> $log
 
+# create persistent volumes
+/root/okdv311/vol.sh >> $log
+
 exit
