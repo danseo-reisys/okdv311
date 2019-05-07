@@ -21,6 +21,7 @@ env > $log
 ./install-openshift.sh >> $log
 
 # create persistent volumes
-/root/okdv311/vol.sh >> $log
+cp /root/okdv311/vol.sh ./
+./vol.sh >> $log
 
 exit
